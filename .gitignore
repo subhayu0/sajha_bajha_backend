@@ -1,0 +1,12 @@
+/node_modules
+/.env
+/dist
+/.cache
+/.vscode
+/.idea
+/.DS_Store
+/.history
+/.next
+/.nuxt
+/.sass-cache
+/.serverless
