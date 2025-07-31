@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const sequelize = new Sequelize(
-  "postgres",
+  "Sajha-Bajha",
   "postgres",
   "admin123",
   {

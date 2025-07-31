@@ -14,6 +14,6 @@ const generateToken = (payload) => {
     return jwt.sign(payload, process.env.secretkey, options);
   };
   
-  export {
-    generateToken,
-  }
+module.exports = {
+  generateToken,
+};
