@@ -46,7 +46,7 @@ const create = async (req, res) => {
       !body.quantity ||
       !body.status
     ) {
-      return res.status(400).send({ message: "Missing required fields" });
+      return res.status(400).send({ message: "Missing required fields" }); /// mustn't be empty
     }
 
     const product = await Product.create({
