@@ -2,7 +2,7 @@ import { ContactMessage } from '../../models/ContactMessage.js';
 
 /**
  * Submit a new contact message
- */
+ *///
 const submitContact = async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -15,7 +15,7 @@ const submitContact = async (req, res) => {
       name,
       email,
       message
-    });
+    }); //can be extended to include phone, subject, etc.
     
     res.status(201).json({ 
       data: contact,
