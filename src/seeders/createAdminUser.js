@@ -13,7 +13,7 @@ export const createAdminUser = async () => {
         password: adminPassword,
         isAdmin: true,
       });
-      console.log("Admin user created with email:", adminEmail, "and password:", adminPassword);
+      console.log("Admin user created with email:", adminEmail, "and password:", adminPassword); // Log the credentials for initial setup
     } else {
       console.log("Admin user already exists.");
     }
