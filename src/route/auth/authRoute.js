@@ -5,3 +5,5 @@ router.get("/init", authController.init);
 router.post("/login", authController.login);
 
 export { router as authRouter };
+
+// This file defines the authentication routes for the application.
