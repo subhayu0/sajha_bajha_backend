@@ -26,7 +26,7 @@ const createOrder = async (req, res) => {
     // Validate required fields
     if (!userId || !firstName || !lastName || !email || !phone || !address || !city || !state || !zip || !country) {
       return res.status(400).json({ error: 'Missing required fields' });
-    }
+    } // mustn't be empty
 
     // Get cart items for the user
     const cartItems = await CartItem.findAll({
