@@ -21,7 +21,7 @@ const getDashboardStats = async (req, res) => {
       }
     });
 
-    // Total products count
+    // Total products counts
     const totalProducts = await Product.count();
 
     // Product counts grouped by category
