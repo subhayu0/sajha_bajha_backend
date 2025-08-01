@@ -16,6 +16,7 @@ export const CartItem = sequelize.define("CartItem", {
   },
 });
 
+
 // Associations
 User.hasMany(CartItem, { foreignKey: "userId", onDelete: "CASCADE" });
 CartItem.belongsTo(User, { foreignKey: "userId" });
